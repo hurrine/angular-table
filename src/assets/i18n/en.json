@@ -1,0 +1,23 @@
+{
+  "table": {
+    "header": {
+      "id": "ID",
+      "name": "Name",
+      "location": "Location",
+      "office": "Office",
+      "phone": "Phone",
+      "cell": "Cell"
+    }
+  },
+  "button": {
+    "delete": "Delete",
+    "update": "Update",
+    "add": "Add",
+    "ok": "OK",
+    "cancel": "Cancel"
+  },
+  "selections": {
+    "tableTitle": "Selected User Information"
+  }
+
+}

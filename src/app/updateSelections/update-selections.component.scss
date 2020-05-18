@@ -1,0 +1,12 @@
+.table {
+  border-spacing: 2px;
+
+  & thead tr th {
+    background-color: #C6EFCD;
+  }
+
+  & thead tr th,
+  & td {
+    border-right: 1px solid #e8e8e8;
+  }
+}

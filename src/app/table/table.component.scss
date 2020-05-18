@@ -1,0 +1,50 @@
+.container {
+  margin: 20px;
+  font-size: 16px;
+}
+
+.table {
+  border-spacing: 2px;
+
+  & thead tr th {
+    background-color: #C6EFCD;
+  }
+
+  & thead tr th,
+  & td {
+    border-right: 1px solid #e8e8e8;
+  }
+}
+
+.btn-danger {
+  color: #BD4249;
+  background-color: #FFC7CE;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.3rem;
+  margin-right: 0;
+}
+
+.btn-primary {
+  color: #C69E43 !important;
+  background-color: #FFEB9C !important;
+}
+
+
+.clr-checkbox-wrapper input[type=checkbox]+label::before {
+  position: absolute;
+  top: .2rem;
+  left: 0;
+  content: "";
+  display: inline-block;
+  height: .8rem;
+  width: .8rem;
+  border: .05rem solid;
+  border-color: #b3b3b3;
+  border-color: var(--clr-forms-border-color, #b3b3b3);
+  border-radius: .15rem;
+  border-radius: var(--clr-forms-checkbox-border-radius, 0.15rem);
+}

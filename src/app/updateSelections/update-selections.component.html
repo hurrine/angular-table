@@ -1,0 +1,48 @@
+<clr-modal [(clrModalOpen)]="modalOpened" [clrModalSize]="'xl'">
+  <h3 class="modal-title">{{'selections.tableTitle' | transloco}}</h3>
+  <div class="modal-body">
+    <table class="table">
+      <thead>
+        <tr>
+          <th rowspan="2">{{'table.header.id' | transloco}}</th>
+          <th rowspan="2">{{'table.header.name' | transloco}}</th>
+          <th rowspan="2">{{'table.header.location' | transloco}}</th>
+          <th rowspan="2">{{'table.header.office' | transloco}}</th>
+
+          <th colspan="2">{{'table.header.phone' | transloco}}</th>
+        </tr>
+        <tr>
+          <th>{{'table.header.office' | transloco}}</th>
+          <th>{{'table.header.cell' | transloco}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of selections; index as i;">
+          <td>
+            <span>{{user.id}}</span>
+          </td>
+          <td>
+            <span>{{user.name}}</span>
+          </td>
+          <td>
+            <span>{{user.location}}</span>
+          </td>
+          <td>
+            <span>{{user.office}}</span>
+          </td>
+          <td>
+            <span>{{user.phoneOfOffice}}</span>
+          </td>
+          <td>
+            <span>{{user.phoneOfCell}}</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline" (click)="closeModal()">{{'button.cancel' | transloco}}</button>
+    <button type="button" class="btn btn-primary" (click)="closeModal()">{{'button.ok' | transloco}}</button>
+  </div>
+</clr-modal>
