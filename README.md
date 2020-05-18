@@ -25,3 +25,13 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+# Functions:
+1	Cell phone column can be edited when double clicked
+2	Clicking the column labe would sort the column alphabatically.
+  Sort will ignore empty row.
+3	When the selector of the first column and the first row is checked, all rows are selected
+4	Clicking the Delete button will delete the selected rows
+5	Update will pop up a alert panel showing the rows you are to update.
+6	Add will add an empty row to fill in the data except the ID, which will be filled after updating
+7 When there is no row checked, Update button will be disabled.
